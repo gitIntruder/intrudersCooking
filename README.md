@@ -1,1 +1,79 @@
-# intrudersCooking
+# Intruder's Cooking
+- Raw Meat replaced with a wide variety of meat cuts from different animals in the game.
+- Charred Meat replaced with new raw meat items.
+- Mountain Lion Meat and Wolf Meat doesn't have a edible recipe, you can convert it into Rotting Flesh.
+- Some original recipes now have different versions requiring different animal meat (e.g. Chili Dog can be made by either Snake Meat or Coyote Backstrap)
+- New buffs from consuming new crafted recipes
+  - Comfort Food
+    - Minor Max Health Increase
+  - Refreshing
+    - Minor Walk/Run Speed Increase
+    - Minor Heat Resist Increase
+    - Minor Damage Resist Decrease
+  - Brain Freeze
+    - Major Walk/Run Speed Increase
+    - Major Heat Resist Increase
+    - Major Damage Resist Decrease
+  - Hot Mess
+    - Minor Walk/Run Speed Decrease
+    - Minor Heat Resist Decrease
+    - Minor Damage Resist Increase
+  - Spicy Disaster
+    - Major Walk/Run Speed Decrease
+    - Major Heat Resist Decrease
+    - Major Damage Resist Increase
+- New Items are incorporated into the Loot Table
+- New Recipes are incorporated into the Crafting Magazine Progression Table
+- New Raw Items
+  - Chili Pepper Seasoning
+  - Dried Mint Leaves
+  - Tablespoon of Salt
+  - BBQ Sauce
+  - Cup of Flour
+  - Heavy Cream Powder
+  - Dried Macaroni and Cheese
+  - Potato Chips
+  - Chocolate Chips
+  - Can of Tomato Soup
+  - Can of Chickpeas
+  - Can of Condensed Milk
+  - Peanut Butter
+  - Grape Jelly
+  - Sour Gummy Worms
+  - Raw Chicken Breasts
+  - Raw Chicken Legs
+  - Raw Pork Belly
+  - Raw Pork Loin
+  - Raw Venison Rump
+  - Raw Venison Loin
+  - Raw Snake Meat
+  - Raw Big Cat Meat
+  - Raw Bear Backstrap
+  - Raw Bear Ribs
+  - Raw Coyote Backstrap
+  - Raw Rabbit Legs
+  - Raw Rabbit Ribs
+  - Raw Wolf Meat
+- New Cooked Items
+  - Cooked Macaroni and Cheese
+  - Grilled Chicken
+  - Slices of Bread
+  - PB & J Sandwich
+  - Mint Chocolate Chip Ice Cream
+  - Mint Tea
+  - Moroccan Chickpea Stew
+  - Spicy Corn on the Cob
+  - Honey Pepper Chicken
+  - Oven Fried Chicken Legs
+  - Boiled Venison
+  - Grilled Snake
+  - BBQ Bear Ribs
+  - Grilled Rabbit
+  - Charred Chicken
+  - Charred Pork
+  - Charred Venison
+  - Charred Snake
+  - Charred Coyote
+  - Charred Rabbit
+
+More Recipes and Items to come.
