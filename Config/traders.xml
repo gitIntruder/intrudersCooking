@@ -1,0 +1,34 @@
+<configs>
+  <!-- Remove/Replace Raw Meat -->
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']/item[@name='foodRawMeat']" />
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
+    <item name="ic_raw_chickenBreasts" count="2,8"/>
+    <item name="ic_raw_chickenLegs" count="2,8"/>
+    <item name="ic_raw_porkBelly" count="2,8"/>
+    <item name="ic_raw_porkLoin" count="2,8"/>
+    <item name="ic_raw_venisonRump" count="2,8"/>
+    <item name="ic_raw_venisonLoin" count="2,8"/>
+    <item name="ic_raw_snakeMeat" count="2,8"/>
+    <item name="ic_raw_bigCatMeat" count="2,8"/>
+    <item name="ic_raw_bearBackstrap" count="2,8"/>
+    <item name="ic_raw_bearRibs" count="2,8"/>
+    <item name="ic_raw_coyoteBackStrap" count="2,8"/>
+    <item name="ic_raw_rabbitLegs" count="2,8"/>
+    <item name="ic_raw_rabbitRibs" count="2,8"/>
+    <item name="ic_raw_wolfMeat" count="2,8"/>
+  </append>
+
+  <!-- Remove/Replace Charred Meat -->
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']/item[@name='foodCharredMeat']" />
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']/item[@name='foodBoiledMeat']" />
+
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+    <item name="ic_charred_chicken" count="1,2"/>
+    <item name="ic_charred_pork" count="1,2"/>
+    <item name="ic_charred_venison" count="1,2"/>
+    <item name="ic_charred_snake" count="1,2"/>
+    <item name="ic_charred_coyote" count="1,2"/>
+    <item name="ic_charred_rabbit" count="1,2"/>
+    <item name="ic_food_boiledVenison" count="1,2"/>
+  </append>
+</configs>

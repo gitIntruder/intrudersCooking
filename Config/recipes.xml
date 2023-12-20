@@ -1,0 +1,276 @@
+<configs>
+  <append xpath="/recipes">
+    <!-- Slices of Bread -->
+    <recipe name="ic_food_slicesOfBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="foodHoney" count="1"/>
+      <ingredient name="ic_food_cupOfFlour" count="1"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Peanut and Butter Sandwich -->
+    <recipe name="ic_food_pbAndJSandwich" count="1" tags="perkMasterChef,learnable">
+      <ingredient name="ic_food_slicesOfBread" count="1"/>
+      <ingredient name="ic_food_peanutButter" count="1"/>
+      <ingredient name="ic_food_grapeJelly" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Moroccan Chickpea Stew -->
+    <recipe name="ic_food_moroccanChickpeaStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="1"/>
+      <ingredient name="ic_can_chickpeas" count="1"/>
+      <ingredient name="ic_can_tomatoSoup" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Cooked Macaroni and Cheese -->
+    <recipe name="ic_food_cookedMacaroniAndCheese" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_food_driedMacaroniAndCheese" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Grilled Chicken -->
+    <recipe name="ic_food_grilledChicken" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_chickenBreasts" count="1"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Spicy Corn on the Cob -->
+    <recipe name="ic_food_spicyCornOnTheCob" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropCorn" count="1"/>
+      <ingredient name="ic_seasoning_groundChiliPepper" count="1"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Honey Pepper Chicken -->
+    <recipe name="ic_food_honeyPepperChicken" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_chickenBreasts" count="1"/>
+      <ingredient name="foodHoney" count="1"/>
+      <ingredient name="ic_seasoning_groundChiliPepper" count="1"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Mint Chocolate Chip Ice Cream -->
+    <recipe name="ic_food_mintChocoChipIceCream" count="1" tags="perkMasterChef,learnable">
+      <ingredient name="ic_food_heavyCreamPowder" count="1"/>
+      <ingredient name="ic_can_condensedMilk" count="1"/>
+      <ingredient name="resourceSnowBall" count="4"/>
+      <ingredient name="ic_food_chocolateChips" count="5"/>
+      <ingredient name="ic_seasoning_driedMintLeaves" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Mint Tea -->
+    <recipe name="ic_drink_mintTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_seasoning_driedMintLeaves" count="2"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Rotting Flesh -->
+    <recipe name="foodRottingFlesh" count="1">
+      <ingredient name="ic_raw_wolfMeat" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="foodRottingFlesh" count="1">
+      <ingredient name="ic_raw_bigCatMeat" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+  </append>
+
+  <!-- Charred Meat -->
+  <remove xpath="/recipes/recipe[@name='foodCharredMeat']" />
+  <append xpath="/recipes">
+    <recipe name="ic_charred_chicken" count="1" craft_area="campfire" tags="perkMasterChef">
+      <ingredient name="ic_raw_chickenBreasts" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="ic_charred_pork" count="1" craft_area="campfire" tags="perkMasterChef">
+      <ingredient name="ic_raw_porkLoin" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="ic_charred_venison" count="1" craft_area="campfire" tags="perkMasterChef">
+      <ingredient name="ic_raw_venisonLoin" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="ic_charred_snake" count="1" craft_area="campfire" tags="perkMasterChef">
+      <ingredient name="ic_raw_snakeMeat" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="ic_charred_coyote" count="1" craft_area="campfire" tags="perkMasterChef">
+      <ingredient name="ic_raw_coyoteBackStrap" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="ic_charred_rabbit" count="1" craft_area="campfire" tags="perkMasterChef">
+      <ingredient name="ic_raw_rabbitLegs" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+  </append>
+
+  <remove xpath="/recipes/recipe[@name='foodGrilledMeat']" />
+  <remove xpath="/recipes/recipe[@name='foodBoiledMeat']" />
+  <remove xpath="/recipes/recipe[@name='foodBaconAndEggs']" />
+  <remove xpath="/recipes/recipe[@name='foodMeatStew']" />
+  <remove xpath="/recipes/recipe[@name='foodSteakAndPotato']" />
+  <remove xpath="/recipes/recipe[@name='foodChiliDog']" />
+
+  <append xpath="/recipes">
+    <!-- Grilled Meat -->
+    <recipe name="ic_food_grilledRabbit" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_rabbitLegs" count="2"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="ic_food_grilledSnake" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_snakeMeat" count="2"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Boiled Meat -->
+    <recipe name="ic_food_boiledVenison" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_venisonRump" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Bacon and Eggs -->
+    <recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_porkBelly" count="1"/>
+      <ingredient name="foodEgg" count="2"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Meat Stew -->
+    <recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_coyoteBackStrap" count="2"/>
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="foodCropCorn" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_rabbitRibs" count="2"/>
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="foodCropCorn" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Steak and Potato Meal -->
+    <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_venisonLoin" count="2"/>
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="foodCropMushrooms" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_bearBackstrap" count="1"/>
+      <ingredient name="foodCropPotato" count="2"/>
+      <ingredient name="foodCropMushrooms" count="2"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Chili Dog -->
+    <recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanChili" count="1"/>
+      <ingredient name="ic_raw_coyoteBackStrap" count="2"/>
+      <ingredient name="foodCornBread" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+    <recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCanChili" count="1"/>
+      <ingredient name="ic_raw_snakeMeat" count="2"/>
+      <ingredient name="foodCornBread" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- BBQ Bear Ribs -->
+    <recipe name="ic_food_bbqBearRibs" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_bearRibs" count="1"/>
+      <ingredient name="ic_food_bbqSauce" count="1"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="6"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="resourceAnimalFat"/>
+      </effect_group>
+    </recipe>
+
+    <!-- Oven Fried Chicken Legs -->
+    <recipe name="ic_food_ovenFriedChickenLegs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="ic_raw_chickenLegs" count="2"/>
+      <ingredient name="ic_food_cupOfFlour" count="1"/>
+      <ingredient name="ic_seasoning_tbspOfSalt" count="4"/>
+      <ingredient name="ic_food_heavyCreamPowder" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="resourceAnimalFat"/>
+      </effect_group>
+    </recipe>
+  </append>
+</configs>

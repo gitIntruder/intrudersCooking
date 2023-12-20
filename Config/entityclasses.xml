@@ -1,0 +1,107 @@
+<configs>
+  <!-- Chicken -->
+  <remove xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalChicken']">
+    <drop event="Harvest" name="ic_raw_chickenBreasts" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_chickenLegs" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_chickenBreasts" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_chickenLegs" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_chickenBreasts" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_chickenLegs" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Boar -->
+  <remove xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalBoar']">
+    <drop event="Harvest" name="ic_raw_porkBelly" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_porkLoin" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_porkBelly" tag="butcherHarvest" count="6"/>
+    <drop event="Harvest" name="ic_raw_porkLoin" tag="butcherHarvest" count="6"/>
+    <drop event="Harvest" name="ic_raw_porkBelly" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_porkLoin" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Doe -->
+  <remove xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalDoe']">
+    <drop event="Harvest" name="ic_raw_venisonRump" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_venisonLoin" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_venisonRump" tag="butcherHarvest" count="3"/>
+    <drop event="Harvest" name="ic_raw_venisonLoin" tag="butcherHarvest" count="3"/>
+    <drop event="Harvest" name="ic_raw_venisonRump" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_venisonLoin" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Stag -->
+  <remove xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalStag']">
+    <drop event="Harvest" name="ic_raw_venisonRump" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_venisonLoin" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_venisonRump" tag="butcherHarvest" count="5"/>
+    <drop event="Harvest" name="ic_raw_venisonLoin" tag="butcherHarvest" count="5"/>
+    <drop event="Harvest" name="ic_raw_venisonRump" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_venisonLoin" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Snake -->
+  <remove xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalSnake']">
+    <drop event="Harvest" name="ic_raw_snakeMeat" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_snakeMeat" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_snakeMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Mountain Lion -->
+  <remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalMountainLion']">
+    <drop event="Harvest" name="ic_raw_bigCatMeat" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_bigCatMeat" tag="butcherHarvest" count="10"/>
+    <drop event="Harvest" name="ic_raw_bigCatMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Bear -->
+  <remove xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalBear']">
+    <drop event="Harvest" name="ic_raw_bearBackstrap" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_bearRibs" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_bearBackstrap" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_bearRibs" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_bearBackstrap" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_bearRibs" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Coyote -->
+  <remove xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalCoyote']">
+    <drop event="Harvest" name="ic_raw_coyoteBackStrap" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_coyoteBackStrap" tag="butcherHarvest" count="10"/>
+    <drop event="Harvest" name="ic_raw_coyoteBackStrap" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Rabbit -->
+  <remove xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalRabbit']">
+    <drop event="Harvest" name="ic_raw_rabbitLegs" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_rabbitRibs" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_rabbitLegs" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_rabbitRibs" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="ic_raw_rabbitLegs" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_rabbitRibs" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Wolf -->
+  <remove xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalWolf']">
+    <drop event="Harvest" name="ic_raw_wolfMeat" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_wolfMeat" tag="butcherHarvest" count="10"/>
+    <drop event="Harvest" name="ic_raw_wolfMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
+  <!-- Dire Wolf -->
+  <remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalDireWolf']">
+    <drop event="Harvest" name="ic_raw_wolfMeat" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_wolfMeat" tag="butcherHarvest" count="20"/>
+    <drop event="Harvest" name="ic_raw_wolfMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+</configs>

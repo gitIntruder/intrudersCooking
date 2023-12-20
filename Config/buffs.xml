@@ -1,0 +1,176 @@
+<config>
+  <append xpath="/buffs">
+    <!-- Hot Mess -->
+    <buff name="ic_buffHotMess" name_key="ic_buffHotMessName" description_key="ic_buffHotMessDesc" tooltip_key="ic_buffHotMessTooltip" icon="icon_hotMess">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffHotMessDisplay"/>
+      <display_value_format value="time"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffHotMessDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffHotMessDisplay" operation="set" value="@$ic_buffHotMessDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffHotMessDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffHotMess">
+          <requirement name="CVarCompare" cvar="$ic_buffHotMessDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffHotMessDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffHotMessDuration" operation="set" value="0"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="WalkSpeed" operation="perc_add" value=".4"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".4"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_subtract" value="40"/>
+        <passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+      </effect_group>
+    </buff>
+
+    <!-- Spicy Disaster -->
+    <buff name="ic_buffSpicyDisaster" name_key="ic_buffSpicyDisasterName" description_key="ic_buffSpicyDisasterDesc" tooltip_key="ic_buffSpicyDisasterTooltip" icon="icon_spicyDisaster">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffHotMessDisplay"/>
+      <display_value_format value="time"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffSpicyDisasterDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffSpicyDisasterDisplay" operation="set" value="@$ic_buffSpicyDisasterDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffSpicyDisasterDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffSpicyDisaster">
+          <requirement name="CVarCompare" cvar="$ic_buffSpicyDisasterDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffSpicyDisasterDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffSpicyDisasterDuration" operation="set" value="0"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="WalkSpeed" operation="perc_add" value=".8"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".8"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_subtract" value="80"/>
+        <passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+      </effect_group>
+    </buff>
+
+    <!-- Brain Freeze -->
+    <buff name="ic_buffBrainFreeze" name_key="ic_buffBrainFreezeName" description_key="ic_buffBrainFreezeDesc" tooltip_key="ic_buffBrainFreezeTooltip" icon="icon_brainFreeze">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffBrainFreezeDisplay"/>
+      <display_value_format value="time"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffBrainFreezeDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffBrainFreezeDisplay" operation="set" value="@$ic_buffBrainFreezeDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffBrainFreezeDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffBrainFreeze">
+          <requirement name="CVarCompare" cvar="$ic_buffBrainFreezeDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffBrainFreezeDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffBrainFreezeDuration" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ic_buffBrainFreezeDisplay" operation="set" value="-15"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="WalkSpeed" operation="perc_subtract" value=".4"/>
+        <passive_effect name="RunSpeed" operation="perc_subtract" value=".4"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="80"/>
+        <passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
+      </effect_group>
+    </buff>
+
+    <!-- Refreshing -->
+    <buff name="ic_buffRefreshing" name_key="ic_buffRefreshingName" description_key="ic_buffRefreshingDesc" tooltip_key="ic_buffRefreshingTooltip" icon="icon_refreshing">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffRefreshingDisplay"/>
+      <display_value_format value="time"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffRefreshingDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffRefreshingDisplay" operation="set" value="@$ic_buffRefreshingDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffRefreshingDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffRefreshing">
+          <requirement name="CVarCompare" cvar="$ic_buffRefreshingDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffRefreshingDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffRefreshingDuration" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$ic_buffRefreshingDisplay" operation="set" value="-15"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="WalkSpeed" operation="perc_subtract" value=".2"/>
+        <passive_effect name="RunSpeed" operation="perc_subtract" value=".2"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="40"/>
+        <passive_effect name="HyperthermalResist" operation="base_add" value="5"/>
+      </effect_group>
+    </buff>
+
+    <!-- Comfort Food -->
+    <buff name="ic_buffComfortFood" name_key="ic_buffComfortFoodName" description_key="ic_buffComfortFoodDesc" tooltip_key="ic_buffComfortFoodTooltip" icon="icon_comfortFood">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffComfortFoodDisplay"/>
+      <display_value_format value="time"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffComfortFoodDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffComfortFoodDisplay" operation="set" value="@$ic_buffComfortFoodDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffComfortFoodDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffComfortFood">
+          <requirement name="CVarCompare" cvar="$ic_buffComfortFoodDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffComfortFoodDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffComfortFoodDuration" operation="set" value="0"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="HealthMax" operation="base_add" value="20"/>
+      </effect_group>
+    </buff>
+
+    <!-- Hot Mess -->
+    <buff name="ic_buffHotMess" name_key="ic_buffHotMessName" description_key="ic_buffHotMessDesc" tooltip_key="ic_buffHotMessTooltip" icon="icon_hotMess">
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffHotMessDisplay"/>
+      <display_value_format value="time"/>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffHotMessDuration" operation="subtract" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffHotMessDisplay" operation="set" value="@$ic_buffHotMessDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffHotMessDisplay" operation="divide" value="@$MetabolismDuration"/>
+      </effect_group>
+
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffHotMess">
+          <requirement name="CVarCompare" cvar="$ic_buffHotMessDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffHotMessDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffHotMessDuration" operation="set" value="0"/>
+      </effect_group>
+
+      <effect_group>
+        <passive_effect name="WalkSpeed" operation="perc_add" value=".4"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value=".4"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_subtract" value="40"/>
+        <passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+      </effect_group>
+    </buff>
+  </append>
+</config>
