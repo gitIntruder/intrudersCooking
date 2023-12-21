@@ -94,13 +94,13 @@
     </recipe>
 
     <!-- Rotting Flesh -->
-    <recipe name="foodRottingFlesh" count="1">
+    <recipe name="foodRottingFlesh" count="1" craft_time="10">
       <ingredient name="ic_raw_wolfMeat" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="foodRottingFlesh" count="1">
+    <recipe name="foodRottingFlesh" count="1" craft_time="10">
       <ingredient name="ic_raw_bigCatMeat" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
@@ -111,37 +111,37 @@
   <!-- Charred Meat -->
   <remove xpath="/recipes/recipe[@name='foodCharredMeat']" />
   <append xpath="/recipes">
-    <recipe name="ic_charred_chicken" count="1" craft_area="campfire" tags="perkMasterChef">
+    <recipe name="ic_charred_chicken" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef">
       <ingredient name="ic_raw_chickenBreasts" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="ic_charred_pork" count="1" craft_area="campfire" tags="perkMasterChef">
+    <recipe name="ic_charred_pork" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef">
       <ingredient name="ic_raw_porkLoin" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="ic_charred_venison" count="1" craft_area="campfire" tags="perkMasterChef">
+    <recipe name="ic_charred_venison" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef">
       <ingredient name="ic_raw_venisonLoin" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="ic_charred_snake" count="1" craft_area="campfire" tags="perkMasterChef">
+    <recipe name="ic_charred_snake" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef">
       <ingredient name="ic_raw_snakeMeat" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="ic_charred_coyote" count="1" craft_area="campfire" tags="perkMasterChef">
+    <recipe name="ic_charred_coyote" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef">
       <ingredient name="ic_raw_coyoteBackStrap" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="ic_charred_rabbit" count="1" craft_area="campfire" tags="perkMasterChef">
+    <recipe name="ic_charred_rabbit" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef">
       <ingredient name="ic_raw_rabbitLegs" count="1"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>

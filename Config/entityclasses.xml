@@ -21,6 +21,17 @@
     <drop event="Harvest" name="ic_raw_porkLoin" count="1" tag="WasteTreasuresCompleteHarvest"/>
   </append>
 
+  <!-- Grace -->
+  <remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='foodRawMeat']" />
+  <append xpath="/entity_classes/entity_class[@name='animalBossGrace']">
+    <drop event="Harvest" name="ic_raw_porkBelly" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_porkLoin" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_porkBelly" tag="butcherHarvest" count="24"/>
+    <drop event="Harvest" name="ic_raw_porkLoin" tag="butcherHarvest" count="24"/>
+    <drop event="Harvest" name="ic_raw_porkBelly" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_porkLoin" count="1" tag="WasteTreasuresCompleteHarvest"/>
+  </append>
+
   <!-- Doe -->
   <remove xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='foodRawMeat']" />
   <append xpath="/entity_classes/entity_class[@name='animalDoe']">
