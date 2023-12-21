@@ -1,7 +1,7 @@
 <configs>
   <append xpath="/recipes">
     <!-- Slices of Bread -->
-    <recipe name="ic_food_slicesOfBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_slicesOfBread" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="drinkJarBoiledWater" count="1"/>
       <ingredient name="foodHoney" count="1"/>
       <ingredient name="ic_food_cupOfFlour" count="1"/>
@@ -12,7 +12,7 @@
     </recipe>
 
     <!-- Peanut and Butter Sandwich -->
-    <recipe name="ic_food_pbAndJSandwich" count="1" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_pbAndJSandwich" count="1" craft_time="45" tags="perkMasterChef,learnable">
       <ingredient name="ic_food_slicesOfBread" count="1"/>
       <ingredient name="ic_food_peanutButter" count="1"/>
       <ingredient name="ic_food_grapeJelly" count="1"/>
@@ -22,7 +22,7 @@
     </recipe>
 
     <!-- Moroccan Chickpea Stew -->
-    <recipe name="ic_food_moroccanChickpeaStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_moroccanChickpeaStew" count="1" craft_time="135" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="foodCropPotato" count="2"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="1"/>
       <ingredient name="ic_can_chickpeas" count="1"/>
@@ -34,7 +34,7 @@
     </recipe>
 
     <!-- Cooked Macaroni and Cheese -->
-    <recipe name="ic_food_cookedMacaroniAndCheese" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_cookedMacaroniAndCheese" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_food_driedMacaroniAndCheese" count="1"/>
       <ingredient name="drinkJarBoiledWater" count="1"/>
       <effect_group>
@@ -43,7 +43,7 @@
     </recipe>
 
     <!-- Grilled Chicken -->
-    <recipe name="ic_food_grilledChicken" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_grilledChicken" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_chickenBreasts" count="1"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
       <effect_group>
@@ -52,7 +52,7 @@
     </recipe>
 
     <!-- Spicy Corn on the Cob -->
-    <recipe name="ic_food_spicyCornOnTheCob" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_spicyCornOnTheCob" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="foodCropCorn" count="1"/>
       <ingredient name="ic_seasoning_groundChiliPepper" count="1"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
@@ -62,7 +62,7 @@
     </recipe>
 
     <!-- Honey Pepper Chicken -->
-    <recipe name="ic_food_honeyPepperChicken" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_honeyPepperChicken" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_chickenBreasts" count="1"/>
       <ingredient name="foodHoney" count="1"/>
       <ingredient name="ic_seasoning_groundChiliPepper" count="1"/>
@@ -73,7 +73,7 @@
     </recipe>
 
     <!-- Mint Chocolate Chip Ice Cream -->
-    <recipe name="ic_food_mintChocoChipIceCream" count="1" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_mintChocoChipIceCream" count="1" craft_time="180" tags="perkMasterChef,learnable">
       <ingredient name="ic_food_heavyCreamPowder" count="1"/>
       <ingredient name="ic_can_condensedMilk" count="1"/>
       <ingredient name="resourceSnowBall" count="4"/>
@@ -85,7 +85,7 @@
     </recipe>
 
     <!-- Mint Tea -->
-    <recipe name="ic_drink_mintTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="ic_drink_mintTea" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_seasoning_driedMintLeaves" count="2"/>
       <ingredient name="drinkJarBoiledWater" count="1"/>
       <effect_group>
@@ -158,14 +158,14 @@
 
   <append xpath="/recipes">
     <!-- Grilled Meat -->
-    <recipe name="ic_food_grilledRabbit" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_grilledRabbit" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_rabbitLegs" count="2"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
       <effect_group>
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="ic_food_grilledSnake" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_grilledSnake" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_snakeMeat" count="2"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="2"/>
       <effect_group>
@@ -174,7 +174,7 @@
     </recipe>
 
     <!-- Boiled Meat -->
-    <recipe name="ic_food_boiledVenison" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_boiledVenison" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_venisonRump" count="1"/>
       <ingredient name="drinkJarBoiledWater" count="1"/>
       <effect_group>
@@ -183,7 +183,7 @@
     </recipe>
 
     <!-- Bacon and Eggs -->
-    <recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="foodBaconAndEggs" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_porkBelly" count="1"/>
       <ingredient name="foodEgg" count="2"/>
       <effect_group>
@@ -192,7 +192,7 @@
     </recipe>
 
     <!-- Meat Stew -->
-    <recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="foodMeatStew" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_coyoteBackStrap" count="2"/>
       <ingredient name="foodCropPotato" count="2"/>
       <ingredient name="foodCropCorn" count="2"/>
@@ -202,7 +202,7 @@
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="foodMeatStew" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_rabbitRibs" count="2"/>
       <ingredient name="foodCropPotato" count="2"/>
       <ingredient name="foodCropCorn" count="2"/>
@@ -214,7 +214,7 @@
     </recipe>
 
     <!-- Steak and Potato Meal -->
-    <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="foodSteakAndPotato" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_venisonLoin" count="2"/>
       <ingredient name="foodCropPotato" count="2"/>
       <ingredient name="foodCropMushrooms" count="2"/>
@@ -223,7 +223,7 @@
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="foodSteakAndPotato" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_bearBackstrap" count="1"/>
       <ingredient name="foodCropPotato" count="2"/>
       <ingredient name="foodCropMushrooms" count="2"/>
@@ -234,7 +234,7 @@
     </recipe>
 
     <!-- Chili Dog -->
-    <recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="foodChiliDog" count="1" craft_time="135" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="foodCanChili" count="1"/>
       <ingredient name="ic_raw_coyoteBackStrap" count="2"/>
       <ingredient name="foodCornBread" count="1"/>
@@ -242,7 +242,7 @@
         <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodRawMeat"/>
       </effect_group>
     </recipe>
-    <recipe name="foodChiliDog" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="foodChiliDog" count="1" craft_time="135" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="foodCanChili" count="1"/>
       <ingredient name="ic_raw_snakeMeat" count="2"/>
       <ingredient name="foodCornBread" count="1"/>
@@ -252,7 +252,7 @@
     </recipe>
 
     <!-- BBQ Bear Ribs -->
-    <recipe name="ic_food_bbqBearRibs" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_bbqBearRibs" count="1" craft_time="180" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_bearRibs" count="1"/>
       <ingredient name="ic_food_bbqSauce" count="1"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="6"/>
@@ -262,7 +262,7 @@
     </recipe>
 
     <!-- Oven Fried Chicken Legs -->
-    <recipe name="ic_food_ovenFriedChickenLegs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    <recipe name="ic_food_ovenFriedChickenLegs" count="1" craft_time="180" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
       <ingredient name="ic_raw_chickenLegs" count="2"/>
       <ingredient name="ic_food_cupOfFlour" count="1"/>
       <ingredient name="ic_seasoning_tbspOfSalt" count="4"/>

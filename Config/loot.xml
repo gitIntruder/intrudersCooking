@@ -116,6 +116,10 @@
     <item name="ic_food_cupOfFlour" count="1,3"/>
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='groupFoodCommon']">
+    <item name="ic_seasoning_groundChiliPepper" count="1,3"/>
+    <item name="ic_seasoning_driedMintLeaves" count="1,3"/>
+    <item name="ic_seasoning_tbspOfSalt"/>
+    <item name="ic_food_cupOfFlour"/>
     <item name="ic_food_potatoChips"/>
     <item name="ic_food_peanutButter"/>
     <item name="ic_food_grapeJelly"/>
@@ -128,6 +132,8 @@
     <item name="ic_food_chocolateChips" count="1,2"/>
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='groupFoodUncommon']">
+    <item name="ic_food_driedMacaroniAndCheese" count="1,2"/>
+    <item name="ic_food_chocolateChips" count="1,2"/>
     <item name="ic_can_tomatoSoup"/>
     <item name="ic_can_chickpeas"/>
     <item name="ic_can_condensedMilk"/>
@@ -139,5 +145,10 @@
   <append xpath="/lootcontainers/lootgroup[@name='groupFoodRare']">
     <item name="ic_food_cookedMacaroniAndCheese"/>
     <item name="ic_food_slicesOfBread"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+    <item name="ic_can_tomatoSoup"/>
+    <item name="ic_can_chickpeas"/>
+    <item name="ic_can_condensedMilk"/>
   </append>
 </configs>
