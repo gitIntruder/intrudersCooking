@@ -83,7 +83,7 @@
       <effect_group>
         <passive_effect name="WalkSpeed" operation="perc_subtract" value=".4"/>
         <passive_effect name="RunSpeed" operation="perc_subtract" value=".4"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_add" value="80"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
         <passive_effect name="HyperthermalResist" operation="base_add" value="10"/>
       </effect_group>
     </buff>
@@ -113,7 +113,7 @@
       <effect_group>
         <passive_effect name="WalkSpeed" operation="perc_subtract" value=".2"/>
         <passive_effect name="RunSpeed" operation="perc_subtract" value=".2"/>
-        <passive_effect name="PhysicalDamageResist" operation="base_add" value="40"/>
+        <passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
         <passive_effect name="HyperthermalResist" operation="base_add" value="5"/>
       </effect_group>
     </buff>
@@ -170,6 +170,87 @@
         <passive_effect name="RunSpeed" operation="perc_add" value=".4"/>
         <passive_effect name="PhysicalDamageResist" operation="base_subtract" value="40"/>
         <passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+      </effect_group>
+    </buff>
+
+    <!-- Pixel Dust -->
+    <buff name="ic_buffPixelDust" name_key="ic_buffPixelDustName" description_key="ic_buffPixelDustDesc" tooltip_key="ic_buffPixelDustTooltip" icon="icon_pixelDust">
+      <damage_type value="disease"/>
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffPixelDustDisplay"/>
+      <display_value_format value="time"/>
+
+      <!-- Buff Initialization -->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="set" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffPixelDustDuration" operation="subtract" value="@.dummy"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffPixelDustDisplay" operation="set" value="@$ic_buffPixelDustDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffPixelDustDisplay" operation="divide" value="@.dummy"/>
+      </effect_group>
+
+      <!-- Validate Duration and if expired, clear duration/display -->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffPixelDust">
+          <requirement name="CVarCompare" cvar="$ic_buffPixelDustDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffPixelDustDuration" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffPixelDustDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".dummy" operation="set" value="0"/>
+      </effect_group>
+
+      <!-- Screen Effect and Run Speed-->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.8" fade="1" effect_name="Distortion"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.8" fade="1" effect_name="Blur"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Distortion"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+
+        <passive_effect name="WalkSpeed" operation="perc_add" value="2"/>
+        <passive_effect name="RunSpeed" operation="perc_add" value="2"/>
+
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffPixelDustDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffPixelDustDuration" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="ic_buffPixelDustCrash"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffPixelDustCrashDisplay" operation="set" value="180"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffPixelDustCrashDuration" operation="set" value="180"/>
+      </effect_group>
+    </buff>
+
+    <!-- Pixel Dust Crash-->
+    <buff name="ic_buffPixelDustCrash" name_key="ic_buffPixelDustCrashName" description_key="ic_buffPixelDustCrashDesc" tooltip_key="ic_buffPixelDustCrashTooltip" icon="icon_drugCrash">
+      <damage_type value="disease"/>
+      <stack_type value="replace"/>
+      <duration value="0"/>
+      <display_value value=".ic_buffPixelDustCrashDisplay"/>
+      <display_value_format value="time"/>
+
+      <!-- Buff Initialization -->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="set" value="@$MetabolismDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ic_buffPixelDustCrashDuration" operation="subtract" value="@.dummy"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffPixelDustCrashDisplay" operation="set" value="@$ic_buffPixelDustCrashDuration"/>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ic_buffPixelDustCrashDisplay" operation="divide" value="@.dummy"/>
+      </effect_group>
+
+      <!-- Validate Duration and if expired, clear duration/display -->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ic_buffPixelDustCrash">
+          <requirement name="CVarCompare" cvar="$ic_buffPixelDustCrashDuration" operation="LTE" value="0"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$ic_buffPixelDustCrashDuration" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ic_buffPixelDustCrashDisplay" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".dummy" operation="set" value="0"/>
+      </effect_group>
+
+      <!-- Reduce Max Stamina -->
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="set" value="100"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="add" value="@$PlayerLevelBonus"/>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusThirstyBlockage" operation="multiply" value=".5"/>
+        <passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$buffStatusThirstyBlockage"/>
+
+        <passive_effect name="StaminaChangeOT" operation="perc_add" value="-0.25"/>
       </effect_group>
     </buff>
   </append>

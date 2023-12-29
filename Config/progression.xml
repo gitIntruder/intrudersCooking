@@ -16,41 +16,46 @@
   <remove xpath="//crafting_skill[@name='craftingFood']/display_entry[@icon='foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato']" />
 
   <insertAfter xpath="//crafting_skill[@name='craftingFood']/display_entry[1]">
-    <display_entry icon="foodPumpkinBread,icon_pbAndJSandwich,foodPumpkinPie,foodPumpkinCheesecake,ic_food_honeyPepperChicken,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,ic_foodT2-1-1,foodT2-2,foodT2-3,ic_foodT2-3-1,foodT2-4,foodT2-5" has_quality="false" unlock_level="11,12,14,18,20,22,26" >
+    <display_entry icon="foodPumpkinBread,icon_pbAndJSandwich,foodPumpkinPie,icon_porkChopsAndRoastedPumpkin,foodPumpkinCheesecake,ic_food_honeyPepperChicken,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,ic_foodT2-1-1,foodT2-2,ic_foodT2-2-1,foodT2-3,ic_foodT2-3-1,foodT2-4,foodT2-5" has_quality="false" unlock_level="11,12,14,16,18,20,22,26" >
       <unlock_entry item="foodPumpkinBread,foodBlueberryPie" unlock_tier="1" />
       <unlock_entry item="ic_food_slicesOfBread,ic_food_pbAndJSandwich" unlock_tier="2" />
       <unlock_entry item="foodPumpkinPie" unlock_tier="3" />
-      <unlock_entry item="foodPumpkinCheesecake" unlock_tier="4" />
-      <unlock_entry item="ic_food_honeyPepperChicken" unlock_tier="5" />
-      <unlock_entry item="foodVegetableStew,foodMeatStew" unlock_tier="6" />
-      <unlock_entry item="foodSteakAndPotato" unlock_tier="7" />
+      <unlock_entry item="ic_food_porkChopsAndRoastedPumpkin" unlock_tier="4" />
+      <unlock_entry item="foodPumpkinCheesecake" unlock_tier="5" />
+      <unlock_entry item="ic_food_honeyPepperChicken" unlock_tier="6" />
+      <unlock_entry item="foodVegetableStew,foodMeatStew" unlock_tier="7" />
+      <unlock_entry item="foodSteakAndPotato" unlock_tier="8" />
     </display_entry>
   </insertAfter>
 
   <remove xpath="//crafting_skill[@name='craftingFood']/display_entry[@icon='drinkYuccaJuiceSmoothie,foodHoboStew,foodFishTacos,foodChiliDog,foodShamChowder']" />
 
   <insertAfter xpath="//crafting_skill[@name='craftingFood']/display_entry[2]">
-    <display_entry icon="drinkYuccaJuiceSmoothie,icon_moroccanChickpeaStew,foodHoboStew,foodFishTacos,foodChiliDog,foodShamChowder" name_key="foodT3-1,ic_foodT3-1-1,foodT3-2,foodT3-3,foodT3-4,foodT3-5" has_quality="false" unlock_level="27,30,35,43,51,59" >
+    <display_entry icon="drinkYuccaJuiceSmoothie,icon_moroccanChickpeaStew,foodHoboStew,icon_roastedChickenLegsAndPotatoes,foodFishTacos,foodChiliDog,icon_wolfDumplings,foodShamChowder" name_key="foodT3-1,ic_foodT3-1-1,foodT3-2,ic_foodT3-2-1,foodT3-3,foodT3-4,ic_foodT3-4-1,foodT3-5" has_quality="false" unlock_level="27,30,35,37,43,51,54,59" >
       <unlock_entry item="drinkYuccaJuiceSmoothie,drinkJarBeer" unlock_tier="1" />
       <unlock_entry item="ic_food_moroccanChickpeaStew" unlock_tier="2" />
       <unlock_entry item="foodHoboStew" unlock_tier="3" />
-      <unlock_entry item="foodFishTacos" unlock_tier="4" />
-      <unlock_entry item="foodChiliDog" unlock_tier="5" />
-      <unlock_entry item="foodShamChowder" unlock_tier="6" />
+      <unlock_entry item="ic_food_roastedChickenLegsAndPotatoes" unlock_tier="4" />
+      <unlock_entry item="foodFishTacos" unlock_tier="5" />
+      <unlock_entry item="foodChiliDog" unlock_tier="6" />
+      <unlock_entry item="ic_food_wolfDumplings" unlock_tier="7" />
+      <unlock_entry item="foodShamChowder" unlock_tier="8" />
     </display_entry>
   </insertAfter>
 
   <remove xpath="//crafting_skill[@name='craftingFood']/display_entry[@icon='foodTunaFishGravyToast,foodShepardsPie,drinkJarGrandpasLearningElixir,foodSpaghetti,foodGumboStew']" />
 
   <insertAfter xpath="//crafting_skill[@name='craftingFood']/display_entry[3]">
-    <display_entry icon="foodTunaFishGravyToast,icon_mintChocoChipIceCream,foodShepardsPie,icon_ovenFriedChickenLegs,drinkJarGrandpasLearningElixir,foodSpaghetti,foodGumboStew" name_key="foodT4-1,ic_foodT4-1-1,foodT4-2,ic_foodT4-2-1,foodT4-3,foodT4-4,ic_foodT4-5-1" has_quality="false" unlock_level="60,65,70,75,80,90,100" >
+    <display_entry icon="foodTunaFishGravyToast,icon_chocoChipCookies,icon_mintChocoChipIceCream,foodShepardsPie,icon_ovenFriedChickenLegs,drinkJarGrandpasLearningElixir,icon_generalTsosCatWithRice,foodSpaghetti,foodGumboStew" name_key="foodT4-1,ic_foodT4-1-1,ic_foodT4-1-2,foodT4-2,ic_foodT4-2-1,foodT4-3,ic_foodT4-3-1,foodT4-4,ic_foodT4-5-1" has_quality="false" unlock_level="60,62,65,70,75,80,82,90,100" >
       <unlock_entry item="foodTunaFishGravyToast,drinkJarGrandpasAwesomeSauce" unlock_tier="1" />
-      <unlock_entry item="ic_food_mintChocoChipIceCream" unlock_tier="2" />
-      <unlock_entry item="foodShepardsPie,drinkJarGrandpasMoonshine" unlock_tier="3" />
-      <unlock_entry item="ic_food_ovenFriedChickenLegs" unlock_tier="4" />
-      <unlock_entry item="drinkJarGrandpasLearningElixir" unlock_tier="5" />
-      <unlock_entry item="foodSpaghetti" unlock_tier="6" />
-      <unlock_entry item="foodGumboStew,ic_food_bbqBearRibs" unlock_tier="7" />
+      <unlock_entry item="ic_food_chocoChipCookies,ic_food_peanutButterCookies" unlock_tier="2" />
+      <unlock_entry item="ic_food_mintChocoChipIceCream" unlock_tier="3" />
+      <unlock_entry item="foodShepardsPie,drinkJarGrandpasMoonshine" unlock_tier="4" />
+      <unlock_entry item="ic_food_ovenFriedChickenLegs" unlock_tier="5" />
+      <unlock_entry item="drinkJarGrandpasLearningElixir" unlock_tier="6" />
+      <unlock_entry item="ic_food_generalTsosCatWithRice" unlock_tier="7" />
+      <unlock_entry item="foodSpaghetti" unlock_tier="8" />
+      <unlock_entry item="foodGumboStew,ic_food_bbqBearRibs" unlock_tier="9" />
     </display_entry>
   </insertAfter>
 
@@ -65,10 +70,15 @@
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="ic_food_boiledVenison,drinkJarYuccaJuice"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,100" value="1" tags="ic_food_cookedMacaroniAndCheese,ic_food_grilledChicken"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,100" value="1" tags="ic_food_slicesOfBread,ic_food_pbAndJSandwich"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,100" value="1" tags="ic_food_porkChopsAndRoastedPumpkin"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="ic_food_honeyPepperChicken"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="ic_food_moroccanChickpeaStew"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="37,100" value="1" tags="ic_food_roastedChickenLegsAndPotatoes"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="54,100" value="1" tags="ic_food_wolfDumplings"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="62,100" value="1" tags="ic_food_chocoChipCookies,ic_food_peanutButterCookies"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="ic_food_mintChocoChipIceCream"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="ic_food_ovenFriedChickenLegs"/>
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="82,100" value="1" tags="ic_food_generalTsosCatWithRice"/>
     <passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="foodGumboStew,ic_food_bbqBearRibs"/>
   </append>
 </configs>

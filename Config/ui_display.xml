@@ -35,5 +35,11 @@
       <display_entry name="dPhysicalDamageResist" display_type="Decimal1" title_key="statPhysicalDamageResist" display_leading_plus="true"/>
       <display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
     </item_display_info>
+    <item_display_info display_type="ic_uiPixelDust" display_group="groupConsumables">
+      <display_entry name="dWalkSpeed" title_key="statWalkSpeed" display_type="Percent" display_leading_plus="true"/>
+      <display_entry name="dRunSpeed" title_key="statRunSpeed" display_type="Percent" display_leading_plus="true"/>
+      <display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+      <display_entry name="dCrashDuration" title_key="statCrashDuration" display_type="Time" />
+    </item_display_info>
   </append>
 </configs>

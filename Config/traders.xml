@@ -9,13 +9,13 @@
     <item name="ic_raw_venisonRump" count="2,8"/>
     <item name="ic_raw_venisonLoin" count="2,8"/>
     <item name="ic_raw_snakeMeat" count="2,8"/>
-    <item name="ic_raw_bigCatMeat" count="2,8"/>
+    <item name="ic_raw_mountainLionRound" count="2,8"/>
     <item name="ic_raw_bearBackstrap" count="2,8"/>
     <item name="ic_raw_bearRibs" count="2,8"/>
     <item name="ic_raw_coyoteBackStrap" count="2,8"/>
     <item name="ic_raw_rabbitLegs" count="2,8"/>
     <item name="ic_raw_rabbitRibs" count="2,8"/>
-    <item name="ic_raw_wolfMeat" count="2,8"/>
+    <item name="ic_raw_wolfSirloin" count="2,8"/>
   </append>
 
   <!-- Remove/Replace Charred Meat -->

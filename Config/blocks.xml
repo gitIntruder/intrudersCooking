@@ -1,0 +1,24 @@
+<configs>
+  <!-- Flour -->
+  <append xpath="/blocks/block[@name='palletBagFlourBaseFull']">
+    <drop event="Harvest" name="ic_food_flour" count="3,5" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='palletBagFlourTile']">
+    <drop event="Harvest" name="ic_food_flour" count="3,5" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='palletBagFlourBaseMed']">
+    <drop event="Harvest" name="ic_food_flour" count="2,4" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='palletBagFlourCapMed']">
+    <drop event="Harvest" name="ic_food_flour" count="2,3" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='palletBagFlourCapSml']">
+    <drop event="Harvest" name="ic_food_flour" count="1,2" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='palletBagFlourSingleBent']">
+    <drop event="Harvest" name="ic_food_flour" count="1" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='palletBagFlourSingleFlat']">
+    <drop event="Harvest" name="ic_food_flour" count="1" tag="allHarvest"/>
+  </append>
+</configs>

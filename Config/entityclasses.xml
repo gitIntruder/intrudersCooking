@@ -65,9 +65,9 @@
   <!-- Mountain Lion -->
   <remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='foodRawMeat']" />
   <append xpath="/entity_classes/entity_class[@name='animalMountainLion']">
-    <drop event="Harvest" name="ic_raw_bigCatMeat" count="0" tool_category="Butcher"/>
-    <drop event="Harvest" name="ic_raw_bigCatMeat" tag="butcherHarvest" count="10"/>
-    <drop event="Harvest" name="ic_raw_bigCatMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_mountainLionRound" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_mountainLionRound" tag="butcherHarvest" count="10"/>
+    <drop event="Harvest" name="ic_raw_mountainLionRound" count="1" tag="WasteTreasuresCompleteHarvest"/>
   </append>
 
   <!-- Bear -->
@@ -103,16 +103,16 @@
   <!-- Wolf -->
   <remove xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='foodRawMeat']" />
   <append xpath="/entity_classes/entity_class[@name='animalWolf']">
-    <drop event="Harvest" name="ic_raw_wolfMeat" count="0" tool_category="Butcher"/>
-    <drop event="Harvest" name="ic_raw_wolfMeat" tag="butcherHarvest" count="10"/>
-    <drop event="Harvest" name="ic_raw_wolfMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_wolfSirloin" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_wolfSirloin" tag="butcherHarvest" count="10"/>
+    <drop event="Harvest" name="ic_raw_wolfSirloin" count="1" tag="WasteTreasuresCompleteHarvest"/>
   </append>
 
   <!-- Dire Wolf -->
   <remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='foodRawMeat']" />
   <append xpath="/entity_classes/entity_class[@name='animalDireWolf']">
-    <drop event="Harvest" name="ic_raw_wolfMeat" count="0" tool_category="Butcher"/>
-    <drop event="Harvest" name="ic_raw_wolfMeat" tag="butcherHarvest" count="20"/>
-    <drop event="Harvest" name="ic_raw_wolfMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="ic_raw_wolfSirloin" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="ic_raw_wolfSirloin" tag="butcherHarvest" count="20"/>
+    <drop event="Harvest" name="ic_raw_wolfSirloin" count="1" tag="WasteTreasuresCompleteHarvest"/>
   </append>
 </configs>
