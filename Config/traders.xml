@@ -16,6 +16,10 @@
     <item name="ic_raw_rabbitLegs" count="2,8"/>
     <item name="ic_raw_rabbitRibs" count="2,8"/>
     <item name="ic_raw_wolfSirloin" count="2,8"/>
+    <item name="ic_raw_wolfSirloin" count="2,8"/>
+    <item name="ic_food_bbqSauce" count="2,8"/>
+    <item name="ic_food_heavyCreamPowder" count="2,8"/>
+    <item name="ic_food_chocolateChips" count="2,8"/>
   </append>
 
   <!-- Remove/Replace Charred Meat -->
