@@ -1,7 +1,6 @@
 # Intruder's Cooking
 - Raw Meat replaced with a wide variety of meat cuts from different animals in the game.
 - Charred Meat replaced with new raw meat items.
-- Mountain Lion Meat and Wolf Meat doesn't have a edible recipe, you can convert it into Rotting Flesh.
 - Some original recipes now have different versions requiring different animal meat (e.g. Chili Dog can be made by either Snake Meat or Coyote Backstrap)
 - New buffs from consuming new crafted recipes
   - Comfort Food
@@ -22,6 +21,12 @@
     - Major Walk/Run Speed Decrease
     - Major Heat Resist Decrease
     - Major Damage Resist Increase
+  - Pixel Dust
+    - Major Walk/Run Speed Increase
+    - Blurred/Distorted Vision
+    - Crash
+      - 50% less Maximum Stamina
+      - 25% less Stamina Regen
 - New Items are incorporated into the Loot Table
 - New Recipes are incorporated into the Crafting Magazine Progression Table
 - New Raw Items
@@ -29,7 +34,8 @@
   - Dried Mint Leaves
   - Tablespoon of Salt
   - BBQ Sauce
-  - Cup of Flour
+  - Rice
+  - Flour
   - Heavy Cream Powder
   - Dried Macaroni and Cheese
   - Potato Chips
@@ -47,21 +53,27 @@
   - Raw Venison Rump
   - Raw Venison Loin
   - Raw Snake Meat
-  - Raw Big Cat Meat
+  - Raw Mountain Lion Round
   - Raw Bear Backstrap
   - Raw Bear Ribs
   - Raw Coyote Backstrap
   - Raw Rabbit Legs
   - Raw Rabbit Ribs
-  - Raw Wolf Meat
+  - Raw Wolf Sirloin
 - New Cooked Items
   - Cooked Macaroni and Cheese
   - Grilled Chicken
   - Slices of Bread
   - PB & J Sandwich
   - Mint Chocolate Chip Ice Cream
+  - Chocolate Chip Cookies
+  - Peanut Butter Cookies
   - Mint Tea
+  - Pork Chops and Roasted Pumpkin
+  - Roasted Chicken Legs and Potatoes
   - Moroccan Chickpea Stew
+  - General Tso's Cat with Rice
+  - Wolf Dumplings
   - Spicy Corn on the Cob
   - Honey Pepper Chicken
   - Oven Fried Chicken Legs
@@ -75,5 +87,7 @@
   - Charred Snake
   - Charred Coyote
   - Charred Rabbit
+- New Drugs
+  - Pixel Dust
 
 More Recipes and Items to come.
