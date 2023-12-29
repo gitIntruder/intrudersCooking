@@ -161,8 +161,8 @@
 
     <!-- Wolf Dumplings -->
     <recipe name="ic_food_wolfDumplings" count="1" craft_time="135" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-      <ingredient name="ic_raw_wolfSirloin" count="2"/>
-      <ingredient name="foodHoney" count="1"/>
+      <ingredient name="ic_raw_wolfSirloin" count="5"/>
+      <ingredient name="ic_food_flour" count="2"/>
       <ingredient name="foodCornMeal" count="2"/>
       <ingredient name="resourceAnimalFat" count="2"/>
       <ingredient name="drinkJarBoiledWater" count="1"/>
